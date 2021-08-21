@@ -11,6 +11,8 @@
   },
   "scripts": {
     "ng": "ng",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --spec cypress/integration/thrird.spec.js",
     "conventional-changelog": "conventional-changelog",
     "start": "ng serve",
     "build": "ng build",
