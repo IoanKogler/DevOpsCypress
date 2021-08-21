@@ -20,10 +20,10 @@ steps:
     npm install
   displayName: 'npm install'
 
-- script: npm run cy:verify
+- script: npx cypress verify 
   displayName: "Cypress verify"
 
-- script: npm run cy:run
+- script: npx cypress run --spec cypress/integration/thrird.spec.js
   displayName: "Run Cypress tests"
 
 - task: PublishTestResults@2
