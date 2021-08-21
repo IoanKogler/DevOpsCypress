@@ -9,7 +9,7 @@ describe ('TC0052 To-dos creation', () => {
 
         cy.get('.appearance-filled')
         .eq(4)
-        .parents('form')
+        //.parents('form') //verified test
 
     })
 }) 
