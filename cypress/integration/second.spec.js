@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 
-describe('my second test suite' , () => {
+describe('my second test suite' , () => {           //Describing the TestCase
 
-    it('first test of second suite', () => {
-        cy.visit('/')
-        cy.contains('Forms').click()//Search any text on site & click
-        cy.contains('Datepicker').click()
+    it('first test of second suite', () => {        //Describing the Test step (Also could have another describe as parent)
+        cy.visit('/')                               //Going to specified root
+        cy.contains('Forms').click()                //Search any text on site & click
+        cy.contains('Datepicker').click()           
 
         cy.contains('nb-card', 'Common Datepicker').find('input').click()
         cy.contains('nb-calendar-day-cell','16').click()
