@@ -23,7 +23,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'cy:run'
+    customCommand: 'run cy:run'
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
