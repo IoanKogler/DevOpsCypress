@@ -23,8 +23,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'run test'
-  continueOnError: true
+    customCommand: 'cy:run'
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
