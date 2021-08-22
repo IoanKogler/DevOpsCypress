@@ -20,10 +20,6 @@ steps:
     npm install -g wait-on
   displayName: 'npm install'
 
-- script: npm run serve & wait-on http://localhost:4200
-  displayName: 'wait'
-
-
 - script: npx cypress verify 
   displayName: "Cypress verify"
 
