@@ -11,5 +11,7 @@ describe ('TC0052 To-dos creation', () => {
         .eq(4)
         //.parents('form') //verified test
 
+        cy.contains('nb-card')
+
     })
 }) 
